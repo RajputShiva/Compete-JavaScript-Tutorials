@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JavaScript</title>
+  </head>
+  <body>
+    <!-- <h1>querySelector</h1> -->
+    <h1>Shivaji Singh</h1>
+    <!-- onkeyup="getvalue(this.value)" aise hum value get kr skte hain -->
+    <input
+       onkeyup="getvalue()"
+      value="address"
+      class="name"
+      type="text"
+    />
+    <input class="name" type="text" />
+  </body>
+  <script>
+    // is tahar bhi hum value ko get kr skte hain
+
+    // function getvalue(value){
+    //     console.log(value);
+    // }
+
+    // querySelector ko use krne se hame pehla wale element ke hi value  ko deta hain agar dono ka class or id ka name same ho to
+    function getvalue() {
+     var name = document.querySelector(".name").value;
+     console.log(name);
+    }
+  </script>
+</html>

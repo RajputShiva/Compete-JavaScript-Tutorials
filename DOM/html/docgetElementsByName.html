@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in Javascript</title>
+  </head>
+  <body>
+    <h1>document.getElementsByName</h1>
+
+    <form action="">
+      <input type="text" placeholder="Enter Your Name" name="name" /><br />
+      <input
+        type="text"
+        placeholder="Enter Your Address1"
+        name="address"
+      /><br />
+      <input
+        type="text"
+        placeholder="Enter Your Address2"
+        name="address"
+      /><br />
+      <input type="text" placeholder="Enter Your Age" name="age" /><br /><br />
+      <button type="button" onclick="submit1()">Submit</button>
+    </form>
+  </body>
+
+  <script>
+    // isse hume name get hota hain kisi bhi element ka aur ye bs form(form ke sare element ke sath) me use hota hain
+    // aise hum value ko get krte hain
+    // function submit1() {
+    //   var name = document.getElementsByName("name");
+    //   //console.log(name);
+    // }
+    // aise hum value ko set krte hain
+    function submit1() {
+      var name = document.getElementsByName('name');
+      console.log(name);
+      document.getElementsByName('name')[0].value = "Rajput Singh";
+    }
+  </script>
+</html>

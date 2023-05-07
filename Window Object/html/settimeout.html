@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript setTimeout</title>
+  </head>
+  <body>
+    <h1>JavaScript SetTimeout</h1>
+    <button onclick="change_pass()">change password</button>
+    <h2 id="p"></h2>
+  </body>
+
+  <script>
+    // settimeout ka mtlb ek particular time tk screen rukta h phir uske bd phir se start hota h
+    function change_pass() {
+    var data = prompt('Enter your new password');
+    // use setInterval here
+     setTimeout(function () {
+    document.getElementById("p").innerText =
+      "password changed successfully new password is : " + data;
+      }, 5000);
+
+    // with extra function hum extra function bna ke bhi kr skte h
+    //   var data = prompt('Enter your new password');
+    //   setTimeout( function () {
+    //     massage();
+    //   }, 5000);
+
+    //   function massage() {
+    //     document.getElementById("p").innerText =
+    //   "password changed successfully new password is : " + data;
+    //   }
+    }
+  </script>
+</html>

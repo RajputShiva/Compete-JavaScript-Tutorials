@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JavaScript</title>
+  </head>
+  <body>
+    <h1>querySelectorAll</h1>
+
+    <p id="show_name">id 2</p>
+    <p id="show_name">id 1</p>
+    <p id="show_name">id 2</p>
+    <p id="show_name">id 1</p>
+    <p id="show_name">id 2</p>
+    <p id="show_name">id 1</p>
+
+    <input onclick="checkInput()" type="button" id="name" value="click" />
+  </body>
+  <script>
+    function checkInput() {
+      //var name = document.getElementById("show_name").innerText;// id use krne se yahi problme h ki ek sth ek hi value get krta h isi liye hum querySelectorAll ka use krte h isse hum ek baar me saare value ko get kr skte hain
+      var name = document.querySelectorAll('#show_name') // js me agar hume id ko select krna hoga to # likhna hota id ke name ke pehle jaise hum css me likhte hain
+      //console.log(name);
+      console.log(name[1].innerHTML); // aise hum value ko get kr skte hain
+    }
+  </script>
+</html>
+<style>
+    #show_name{
+        color: red;
+    }
+</style>

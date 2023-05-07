@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt</title>
+  </head>
+  <body>
+    <h1>JavaScript Prompt</h1>
+    <h2 id="p"></h2>
+    <button onclick="change_pass()">change password</button>
+  </body>
+
+  <script>
+    //  Prompt bhi ek prakar ka alert message hi hota hain
+    var data = prompt("Enter your name");
+   // document.write(data);// isi hum aple message ko display bhi kr skte h on screen
+    //console.log(data); // is se hum console me apna data dekh skte hain
+  // how to set data by id method
+  document.getElementById('p').innerText="password changed successfully new password is : "+data;
+  </script>
+</html>

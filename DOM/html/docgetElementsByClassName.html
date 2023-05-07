@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in Javascript</title>
+  </head>
+  <body>
+    <h1>document.getElementsByClassName</h1>
+    <div>
+      <h1 class="address">Shivaji Singh</h1>
+      <h3 class="address">Address</h3>
+      <p class="address">Chandauli</p>
+      <input class="address" type="text" value="shivaji" />
+    </div>
+  </body>
+</html>
+<style>
+  .address {
+    color: red;
+  }
+</style>
+
+<script>
+  // jiase TagName me sara km krte the value ko get krne ke liye usi tarah isme krte hain (dono hi collection provide krte hian)
+  var class_name = document.getElementsByClassName("address");
+  console.log(class_name);
+  for (i = 0; i < class_name.length; i++) {
+    console.log(class_name[i].innerHTML);
+  }
+  console.log(class_name[3].value);
+</script>

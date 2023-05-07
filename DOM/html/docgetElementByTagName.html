@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JavaScript</title>
+  </head>
+  <body>
+    <h1>document.getElementsByTagName1</h1>
+    <h1>document.getElementsByTagName2</h1>
+    <h1>document.getElementsByTagName3</h1>
+    <h1>document.getElementsByTagName4</h1>
+    <h1>document.getElementsByTagName5</h1>
+
+    <button onclick="change_h1()">change all h1</button>
+  </body>
+  <script>
+    // iska(document.getElementsByTagName('h1')[0].innerText) km hain collections ko return krna
+
+    // var tag = document.getElementsByTagName('h1')[0].innerText // isse hum element ko get kr skte h array ki help se
+    // console.log(tag);
+
+    // agar sara ek sth krna hain to loop lgate hain
+
+    // var tag = document.getElementsByTagName("h1");
+    // var len = tag.length;
+    // console.log(len);
+    // for (i = 0; i < len; i++) {
+    //   //console.log(i); // isse hume i ki indexing milegi
+    //   //console.log(tag[i]); // isse hum value ko get krte hain
+    //   console.log(tag[i].innerText); // isse hum value ke under ka text get krte hain
+    // }
+
+    function change_h1() {
+      var tag = document.getElementsByTagName("h1");
+      var len = tag.length;
+      console.log(len);
+      for (i = 0; i < len; i++) {
+        tag[i].innerText = "Shivaji Singh"+(i+1);
+      }
+    }
+  </script>
+</html>

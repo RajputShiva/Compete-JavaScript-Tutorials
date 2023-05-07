@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm alert</title>
+  </head>
+  <body>
+    <h1>Shivaji Singh</h1>
+    <button onclick="del()">change name</button>
+  </body>
+</html>
+<script>
+  // confirm ek alert type ka hota h user kisi se kuch krwa se pehale puchne ke liye
+  function del() {
+    var con = confirm("Are yor sure to change name Shiva Rajput to Shivaji Singh");
+    if (con == true) {
+      document.getElementsByTagName('h1')[0].innerText = "Shiva Rajput";
+    } else{
+        document.getElementsByTagName('h1')[0].innerText = "Shivaji Singh"
+    }
+  }
+</script>

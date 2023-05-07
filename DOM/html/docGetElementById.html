@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Document.getElementById Method in JavaScript</h1>
+    <!-- <p id="name" style="color: red">Shiavji Singh</p>
+    <a id="link" href="https://learn.cuvette.tech/enrollments"
+      >Cuvette Learning Plateform</a
+    ><br /><br />
+    <input type="text" id="name"><br>
+    <button onclick="change_name()">change name</button> -->
+
+    <!-- <p id="show_name"></p>
+    <input type="text" id="name" value="shivaji singh"/>
+    <button onclick="checkInput()">Submit</button> -->
+
+    <p id="show_name"></p>
+    <input onkeyup="checkInput()" type="text" id="name"/>
+  </body>
+  <script>
+    //for a tag and p tag
+
+    // var name = document.getElementById('name').innerText
+    // console.log(name);
+
+    // var name = document.getElementById('name').id
+    // console.log(name); // aise hum id ko get krte hain
+
+    // var name = document.getElementById("name").style.color;
+    // console.log(name); // aise hum color ko get krte hain aise hi hum kuch bhi get kr skte hain
+
+    // function change_name() {
+    //   var name = document.getElementById("name");
+    //   name.innerHTML = "Rajput Shivaji Singh"; // innerText or innerHTML do se hum HTML ke data(name) ko get krte hain wo kisi bhi type ka data ho
+    // }
+
+    // var name = document.getElementById("name").innerText;
+    // console.log(name);
+    // function change_name() {
+    //   var name = document.getElementById("name");
+    //   name.innerHTML = "Rajput Shivaji Singh"; // innerText or innerHTML do se hum HTML ke data(name) ko get krte hain wo kisi bhi type ka data ho
+    //   name.style.color = "blue"; // aise hum color bhi change kr skte hain
+    //   name.style.background = "red"; // aise hum background color bhi change kr skta hu isi tarah hum kuch bhi changes kr skte h js ki help se
+    //   name.style.fontSize = "40px";
+    //   name.style.textAlign = "center";
+    //  var link = document.getElementById('link');
+    //  link.href="https://course.acciojob.com/";
+    //  var link1 = document.getElementById("link").href;
+    //  console.log(link1);
+    // }
+
+    // var link = document.getElementById("link").href;
+    // console.log(link);
+
+    // for input box data getting and setting
+
+    // function checkInput() {
+    //  var name = document.getElementById("name").value;
+    //  //console.log(name); // value se hum value ko get kr skte hain
+    //   document.getElementById('show_name').innerText=name // aur aise bhi hum value ko get kr skte hain
+    // }
+
+    // onwrite on the input box
+    
+    function checkInput() {
+     var name = document.getElementById("name").value;
+     //console.log(name); // value se hum value ko get kr skte hain
+     //document.getElementById('show_name').innerText=name // aur aise bhi hum value ko get kr skte hain
+     if(name.length==10){
+      document.getElementById('show_name').innerText="this is the valid number :"+ name;
+    }
+    else if(name.length>10){
+      document.getElementById('show_name').innerText="this is the invalid number :"+ name;
+    }
+    else{
+      document.getElementById('show_name').innerText="this is the less than 10 digit number :"+ name;
+    }
+  }
+    
+  </script>
+</html>

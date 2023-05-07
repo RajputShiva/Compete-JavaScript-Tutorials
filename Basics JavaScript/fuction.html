@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JavaScript</title>
+</head>
+<body>
+    <h1>Function in JavaScript!!</h1>
+</body>
+<script>
+    // normal function
+    // function myfunction(){
+    //    alert("myfuncton has been called");
+    //}
+    // myfunction()
+    // myfunction()
+    // myfunction()
+    // myfunction()
+    // myfunction()
+
+    // argument function
+    // function myfunction(a,b){
+    //     alert("argument function has been called"+a+" "+b)
+    // }
+    // myfunction(10,20)
+    // myfunction(20,30)
+    // myfunction(30,40)
+    // myfunction(40,50)
+    function myfunction(a,b){
+        console.log("argument function has been called" +" "+(a+b));
+    }
+    for(var i=0 ; i<=100;i++){
+        myfunction(10,20+i)
+    }
+</script>
+</html>

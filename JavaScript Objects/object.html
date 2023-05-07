@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Object Literal
+
+    //var shiva = {'name':"Shivaji Singh",'age':27,'address':'Chandauli','city':'Chandauli'}
+    // object ke liye hi hum <"forin" loop> ka use krte hain
+    // for (const key in shiva) {
+    //     document.write(shiva[key]+"<br>");
+    // }
+     
+    // bina loop ke hum aise data get kr skte hain
+
+    // document.write(shiva.name)
+    // document.write(shiva.age)
+    // document.write(shiva.city)
+    // document.write(shiva.address)
+    // document.write(shiva.name)
+    // document.write("<br>" + shiva.city) 
+    // shiva.city = "Varansi" 
+    // document.write("<br>" + shiva.city) 
+    // console.log(shiva);
+
+    // By Object Class
+
+    var virat = new Object();
+    virat.name = "Virat Kohli";
+    virat.age = 30;
+    virat.address = "Delhi";
+    virat.city = "I don't know";
+    console.log(virat);
+    document.write("<h1>"+virat.name+"</h1>");
+    for (const key in virat) {
+        document.write(key+" : ")
+        document.write(virat[key]+"<br>");
+    }
+</script>
+</html>
