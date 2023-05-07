@@ -1,4 +1,4 @@
-                                                       -: JavaScript Websites :-
+                                              -: JavaScript Websites :-
                                                        
 Link YouTube :- https://www.youtube.com/playlist?list=PLqleLpAMfxGCcUpg6kOLnqbSDiWrbxSIL
 
