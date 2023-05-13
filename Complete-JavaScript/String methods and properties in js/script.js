@@ -30,6 +30,26 @@
 // const charactors = 'hello my name is shiva';
 // console.log(charactors.charAt('7')); // ye charactor ki indexing batata hain.
 
-const message = 'hello everyone i Am shiva';
-//console.log(message.charCodeAt(17)); // ye hume acii code deta hain jo index hum put krte hain uska.
-console.log(message.split('')); // ye value ko split krta hain.
+// const message = 'hello everyone i Am shiva';
+// //console.log(message.charCodeAt(17)); // ye hume acii code deta hain jo index hum put krte hain uska.
+// console.log(message.split('')); // ye value ko split krta hain.
+
+// String template literal :-
+// `` isi ko hum template string bolte hain.
+// ~ isko hum tilde bolte hain.
+const lastFourDigits = '7856'
+//  const concatenatedString = `Last four digit of my account number is ` +  lastFourDigits;
+//  console.log(concatenatedString);
+// or using concate
+// const templateString = `Last four digit of my account number is `.concat(lastFourDigits);
+// console.log(templateString);
+
+// using string literal
+const templateString = `My account number is ${lastFourDigits.padStart(11, '*')}.`
+console.log(templateString);
+const bankBalance = 98730000;
+const templateString2 = `I have ${bankBalance}Rs in my account.`
+console.log(templateString2);
+
+const addedString = `I have added ₹` + bankBalance + ' in my account.'
+console.log(addedString);
