@@ -10,3 +10,7 @@ Link Codecademy :- https://www.codecademy.com/learn
 Link YouTube :- https://www.youtube.com/watch?v=E59DytaXTio&list=PLfEr2kn3s-bo4LwlbyZugHPavhcdW8YMC&index=46
 
 Link YouTube :- https://www.youtube.com/watch?v=hKB-YGF14SY&t=143s
+
+Link of complete js notes :- https://matfuvit.github.io/UVIT/predavanja/literatura/TutorialsPoint%20JavaScript.pdf
+
+Link of complete js notes :- https://basponccollege.org/LMS/EMaterial/Science/Comp/HVP/JS%20Notes.pdf
